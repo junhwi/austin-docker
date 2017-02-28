@@ -1,0 +1,3 @@
+[submodule "austin-sbst"]
+	path = austin-sbst
+	url = https://github.com/kiranlak/austin-sbst.git
