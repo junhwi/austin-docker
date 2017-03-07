@@ -1,3 +1,6 @@
+# Docker image for Austin.
+# Written in 2017 by Junhwi Kim <junhwi.kim23@gmail.com>
+
 FROM ubuntu:12.04
 
 RUN apt-get -y update && apt-get install -y gcc g++ ocaml make
@@ -18,4 +21,5 @@ RUN mkdir -p ../AustinLib/extlib/libstr
 RUN mkdir -p ../AustinLib/extlib/libunix
 RUN make all
 
-WORKDIR /austin/austin-sbst/AustinOcaml
+ADD run.sh /austin
+WORKDIR /austin
